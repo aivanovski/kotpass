@@ -4,3 +4,31 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+aes = { version = "0.9.1", features = ["zeroize"] }
+argon2 = { version = "0.5.3", features = ["std", "zeroize"] }
+base64 = "0.22.1"
+blake2 = "0.10.6"
+block-padding = "0.4.2"
+byteorder = "1.5.0"
+cbc = { version = "0.2.1", features = ["alloc", "zeroize"] }
+chacha20 = { version = "0.10.1", features = ["zeroize"] }
+cipher = { version = "0.5.2", features = ["alloc", "block-padding", "zeroize"] }
+digest = "0.11.3"
+flate2 = "1.1.9"
+hex = "0.4.3"
+hmac = { version = "0.13.0", features = ["zeroize"] }
+indexmap = "2.14.0"
+quick-xml = "0.41.0"
+rand = "0.10.2"
+salsa20 = { version = "0.11.0", features = ["zeroize"] }
+sha2 = { version = "0.11.0", features = ["zeroize"] }
+subtle = "2.6.1"
+thiserror = "2.0.18"
+time = { version = "=0.3.52", features = ["parsing", "formatting"] }
+twofish = { version = "0.8.0", features = ["zeroize"] }
+uuid = { version = "1.23.5", features = ["v4", "fast-rng"] }
+zeroize = { version = "1.9.0", features = ["derive"] }
+
+[dev-dependencies]
+rstest = "0.26.1"
+tempfile = "3.27.0"
