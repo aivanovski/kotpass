@@ -141,7 +141,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/DatabaseHeader.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/ContentBlocks.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/Credentials.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/Placeholders.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/Placeholders.kt`
 
 ## Phase 8: database API, builders, and modifiers
 
