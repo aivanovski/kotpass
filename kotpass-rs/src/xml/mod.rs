@@ -1,6 +1,7 @@
 mod attribute;
 mod doctype;
 mod element;
+pub mod format_xml;
 mod namespace;
 mod node;
 mod print_options;
