@@ -99,7 +99,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaEngine.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Salsa20Engine.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/TwofishEngine.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Blake2bDigest.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Blake2bDigest.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Argon2Engine.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptionSaltGenerator.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/KeyTransform.kt`

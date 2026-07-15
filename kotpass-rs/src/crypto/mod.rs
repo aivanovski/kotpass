@@ -1,3 +1,4 @@
+pub mod blake2b;
 pub mod byte_array;
 pub mod byte_string;
 pub mod byte_utils;
@@ -8,6 +9,7 @@ pub mod padding;
 pub mod secure_random;
 pub mod stream;
 
+pub use blake2b::Blake2bDigest;
 pub use cipher::{
     BlockCipher, BlockCipherMode, CbcBlockCipherMode, PaddedBufferedBlockCipher, TwofishEngine,
 };
