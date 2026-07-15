@@ -10,6 +10,7 @@ mod doctype;
 mod element;
 mod entry;
 pub mod format_xml;
+mod group;
 mod instant;
 pub mod keyfile_xml;
 mod namespace;
@@ -33,6 +34,7 @@ pub use deleted_object::{marshal_deleted_object, unmarshal_deleted_object};
 pub use doctype::Doctype;
 pub use element::Element;
 pub use entry::{InnerStream, marshal_entry, unmarshal_entries, unmarshal_entry};
+pub use group::{marshal_group, unmarshal_group};
 pub use instant::{
     EPOCH_SECONDS_FROM_AD, NodeInstantExt, XmlInstantError, marshal_instant, parse_instant,
 };
