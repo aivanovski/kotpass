@@ -116,7 +116,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/FormatXml.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/KeyfileXml.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Boolean.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Node.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Node.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/Instant.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/AutoTypeData.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/Binaries.kt`
