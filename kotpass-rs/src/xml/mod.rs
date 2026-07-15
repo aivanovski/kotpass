@@ -13,6 +13,7 @@ pub mod format_xml;
 mod group;
 mod instant;
 pub mod keyfile_xml;
+mod meta;
 mod namespace;
 mod node;
 mod node_ext;
@@ -38,6 +39,7 @@ pub use group::{marshal_group, unmarshal_group};
 pub use instant::{
     EPOCH_SECONDS_FROM_AD, NodeInstantExt, XmlInstantError, marshal_instant, parse_instant,
 };
+pub use meta::{marshal_meta, unmarshal_meta};
 pub use namespace::Namespace;
 pub use node::Node;
 pub use node_ext::{NodeValueError, NodeXmlExt};
