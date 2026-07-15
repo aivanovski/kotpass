@@ -3,6 +3,7 @@ mod auto_type_data;
 mod binaries;
 mod binary_reference;
 mod boolean;
+mod custom_data;
 mod doctype;
 mod element;
 pub mod format_xml;
@@ -22,6 +23,7 @@ pub use auto_type_data::{marshal_auto_type_data, unmarshal_auto_type_data};
 pub use binaries::{marshal_binary_data, unmarshal_binaries};
 pub use binary_reference::{marshal_binary_reference, unmarshal_binary_reference};
 pub use boolean::{BoolXmlExt, bool_to_xml_string};
+pub use custom_data::{marshal_custom_data, unmarshal_custom_data};
 pub use doctype::Doctype;
 pub use element::Element;
 pub use instant::{

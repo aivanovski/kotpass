@@ -121,7 +121,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/AutoTypeData.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/Binaries.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/BinaryReference.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/CustomData.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/CustomData.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/CustomIcons.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/DeletedObject.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/TimeData.kt`
