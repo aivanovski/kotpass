@@ -51,23 +51,23 @@ Ordering notes:
 
 ## Phase 3: core data models
 
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/AutoTypeItem.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/BinaryReference.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/CustomDataValue.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/CustomIcon.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/DatabaseContent.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/DeletedObject.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/TimeData.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/AutoTypeData.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/BinaryData.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/DatabaseElement.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/EntryValue.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/EntryFields.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/Entry.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/FormatVersion.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/Group.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/Meta.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/XmlContext.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/AutoTypeItem.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/BinaryReference.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/CustomDataValue.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/CustomIcon.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/DatabaseContent.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/DeletedObject.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/TimeData.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/AutoTypeData.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/BinaryData.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/DatabaseElement.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/EntryValue.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/EntryFields.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/Entry.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/FormatVersion.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/Group.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/Meta.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/models/XmlContext.kt`
 
 ## Phase 4: vendored XML builder package
 
