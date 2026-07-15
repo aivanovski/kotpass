@@ -129,7 +129,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/Group.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/Meta.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/XmlContentParser.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/DefaultXmlContentParser.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/DefaultXmlContentParser.kt`
 
 ## Phase 7: database header and content format
 
