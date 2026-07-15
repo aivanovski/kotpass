@@ -8,6 +8,7 @@ mod custom_icons;
 mod deleted_object;
 mod doctype;
 mod element;
+mod entry;
 pub mod format_xml;
 mod instant;
 pub mod keyfile_xml;
@@ -31,6 +32,7 @@ pub use custom_icons::{marshal_custom_icons, unmarshal_custom_icons};
 pub use deleted_object::{marshal_deleted_object, unmarshal_deleted_object};
 pub use doctype::Doctype;
 pub use element::Element;
+pub use entry::{InnerStream, marshal_entry, unmarshal_entries, unmarshal_entry};
 pub use instant::{
     EPOCH_SECONDS_FROM_AD, NodeInstantExt, XmlInstantError, marshal_instant, parse_instant,
 };
