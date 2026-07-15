@@ -36,18 +36,18 @@ Ordering notes:
 
 ## Phase 2: low-level byte, IO, and stream helpers
 
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/ByteUtils.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/ByteArray.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/ByteString.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Long.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/SecureRandom.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/Base16.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/Base64.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/BufferedStream.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/RealBufferedStream.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/TeeBufferedStream.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Source.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/UUID.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/ByteUtils.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/ByteArray.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/ByteString.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Long.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/SecureRandom.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/Base16.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/Base64.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/BufferedStream.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/RealBufferedStream.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/io/TeeBufferedStream.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Source.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/UUID.kt`
 
 ## Phase 3: core data models
 
