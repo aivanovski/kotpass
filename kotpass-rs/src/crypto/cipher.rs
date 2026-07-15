@@ -1,4 +1,97 @@
+use ::cipher::KeyInit;
+
 use crate::{crypto::padding::BlockCipherPadding, error::CryptoError};
+
+#[derive(Clone)]
+pub struct TwofishEngine {
+    cipher: Option<twofish::Twofish>,
+    encrypting: bool,
+    working_key: Option<Vec<u8>>,
+}
+
+impl TwofishEngine {
+    pub const BLOCK_SIZE: usize = 16;
+
+    pub fn new() -> Self {
+        Self {
+            cipher: None,
+            encrypting: false,
+            working_key: None,
+        }
+    }
+}
+
+impl Default for TwofishEngine {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
+impl BlockCipher for TwofishEngine {
+    fn block_size(&self) -> usize {
+        Self::BLOCK_SIZE
+    }
+
+    fn is_encrypting(&self) -> bool {
+        self.encrypting
+    }
+
+    fn init(&mut self, encrypting: bool, key: &[u8]) -> Result<(), CryptoError> {
+        if !matches!(key.len(), 16 | 24 | 32) {
+            return Err(CryptoError::InvalidDataLength(
+                "Twofish key length must be 128/192/256 bits".to_owned(),
+            ));
+        }
+
+        self.encrypting = encrypting;
+        self.working_key = Some(key.to_vec());
+        self.cipher = Some(twofish::Twofish::new_from_slice(key).map_err(|_| {
+            CryptoError::InvalidDataLength("Twofish key length must be 128/192/256 bits".to_owned())
+        })?);
+        Ok(())
+    }
+
+    fn process_block(
+        &mut self,
+        src: &[u8],
+        src_offset: usize,
+        dst: &mut [u8],
+        dst_offset: usize,
+    ) -> Result<usize, CryptoError> {
+        let cipher = self
+            .cipher
+            .as_ref()
+            .ok_or_else(|| CryptoError::InvalidKey("Twofish is not initialised".to_owned()))?;
+
+        ensure_input(src, src_offset, Self::BLOCK_SIZE)?;
+        if dst_offset
+            .checked_add(Self::BLOCK_SIZE)
+            .is_none_or(|end| end > dst.len())
+        {
+            return Err(CryptoError::InvalidDataLength(
+                "Output buffer is too short".to_owned(),
+            ));
+        }
+
+        let mut block = ::cipher::Block::<twofish::Twofish>::default();
+        block.copy_from_slice(&src[src_offset..src_offset + Self::BLOCK_SIZE]);
+
+        if self.encrypting {
+            ::cipher::BlockCipherEncrypt::encrypt_block(cipher, &mut block);
+        } else {
+            ::cipher::BlockCipherDecrypt::decrypt_block(cipher, &mut block);
+        }
+
+        dst[dst_offset..dst_offset + Self::BLOCK_SIZE].copy_from_slice(&block);
+        Ok(Self::BLOCK_SIZE)
+    }
+
+    fn reset(&mut self) {
+        if let Some(key) = &self.working_key {
+            self.cipher = twofish::Twofish::new_from_slice(key).ok();
+        }
+    }
+}
 
 pub trait BlockCipher {
     fn block_size(&self) -> usize;
@@ -327,7 +420,7 @@ fn ensure_input(src: &[u8], offset: usize, len: usize) -> Result<(), CryptoError
 mod tests {
     use crate::{
         crypto::{
-            cipher::{BlockCipher, BlockCipherMode, PaddedBufferedBlockCipher},
+            cipher::{BlockCipher, BlockCipherMode, PaddedBufferedBlockCipher, TwofishEngine},
             padding::Pkcs7Padding,
         },
         error::CryptoError,
@@ -433,5 +526,25 @@ mod tests {
         let decrypted = dec.process_bytes_to_vec(&encrypted).unwrap();
 
         assert_eq!(decrypted, plain);
+    }
+
+    #[test]
+    fn twofish_matches_standard_zero_key_vector() {
+        let mut cipher = TwofishEngine::new();
+        let mut encrypted = [0; 16];
+        cipher.init(true, &[0; 16]).unwrap();
+        cipher
+            .process_block(&[0; 16], 0, &mut encrypted, 0)
+            .unwrap();
+
+        assert_eq!(hex::encode(encrypted), "9f589f5cf6122c32b6bfec2f2ae8c35a");
+
+        let mut decrypted = [0xff; 16];
+        cipher.init(false, &[0; 16]).unwrap();
+        cipher
+            .process_block(&encrypted, 0, &mut decrypted, 0)
+            .unwrap();
+
+        assert_eq!(decrypted, [0; 16]);
     }
 }
