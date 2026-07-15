@@ -114,7 +114,7 @@ Ordering notes:
 ## Phase 6: XML mapping for KeePass models
 
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/FormatXml.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/KeyfileXml.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/KeyfileXml.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Boolean.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/extensions/Node.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/xml/Instant.kt`
