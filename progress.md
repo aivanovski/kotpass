@@ -88,7 +88,7 @@ Ordering notes:
 
 ## Phase 5: crypto primitives and providers
 
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptedValue.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptedValue.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/BlockCipher.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/BlockCipherMode.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/PaddedBufferedBlockCipher.kt`
