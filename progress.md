@@ -134,7 +134,7 @@ Ordering notes:
 ## Phase 7: database header and content format
 
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/Signature.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/VariantItem.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/VariantItem.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/VariantDictionary.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/KdfParameters.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/DatabaseInnerHeader.kt`
