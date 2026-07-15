@@ -89,11 +89,11 @@ Ordering notes:
 ## Phase 5: crypto primitives and providers
 
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptedValue.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/BlockCipher.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/BlockCipherMode.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/PaddedBufferedBlockCipher.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/padding/BlockCipherPadding.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/padding/PKCS7Padding.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/BlockCipher.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/BlockCipherMode.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/PaddedBufferedBlockCipher.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/padding/BlockCipherPadding.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/padding/PKCS7Padding.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaCore.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaCha7539Engine.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaEngine.kt`
