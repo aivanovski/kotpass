@@ -1,0 +1,21 @@
+mod attribute;
+mod doctype;
+mod element;
+mod namespace;
+mod node;
+mod print_options;
+mod text;
+mod utils;
+mod xml_builder;
+mod xml_version;
+
+pub use attribute::{Attribute, AttributeValue, UnsafeValue, unsafe_value};
+pub use doctype::Doctype;
+pub use element::Element;
+pub use namespace::Namespace;
+pub use node::Node;
+pub use print_options::PrintOptions;
+pub use text::{CDataElement, Comment, ProcessingInstructionElement, TextElement};
+pub use utils::{build_name, escape_value, reference_character};
+pub use xml_builder::{XmlParseError, node, parse_str, xml};
+pub use xml_version::XmlVersion;

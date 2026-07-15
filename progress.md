@@ -71,20 +71,20 @@ Ordering notes:
 
 ## Phase 4: vendored XML builder package
 
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Attribute.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/CDATAElement.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Comment.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Doctype.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Element.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Namespace.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Node.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/PrintOptions.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/ProcessingInstructionElement.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/TextElement.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Unsafe.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Utils.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/XmlBuilder.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/XmlVersion.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Attribute.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/CDATAElement.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Comment.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Doctype.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Element.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Namespace.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Node.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/PrintOptions.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/ProcessingInstructionElement.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/TextElement.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Unsafe.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/Utils.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/XmlBuilder.kt` - replaced by `kotpass-rs/src/xml`.
+- [x] `kotpass/kotpass/src/main/kotlin/org/redundent/kotlin/xml/XmlVersion.kt` - replaced by `kotpass-rs/src/xml`.
 
 ## Phase 5: crypto primitives and providers
 
