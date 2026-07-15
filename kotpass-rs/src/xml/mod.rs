@@ -1,4 +1,5 @@
 mod attribute;
+mod boolean;
 mod doctype;
 mod element;
 pub mod format_xml;
@@ -12,6 +13,7 @@ mod xml_builder;
 mod xml_version;
 
 pub use attribute::{Attribute, AttributeValue, UnsafeValue, unsafe_value};
+pub use boolean::{BoolXmlExt, bool_to_xml_string};
 pub use doctype::Doctype;
 pub use element::Element;
 pub use namespace::Namespace;
