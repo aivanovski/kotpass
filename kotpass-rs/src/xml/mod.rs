@@ -3,6 +3,7 @@ mod boolean;
 mod doctype;
 mod element;
 pub mod format_xml;
+mod instant;
 pub mod keyfile_xml;
 mod namespace;
 mod node;
@@ -17,6 +18,9 @@ pub use attribute::{Attribute, AttributeValue, UnsafeValue, unsafe_value};
 pub use boolean::{BoolXmlExt, bool_to_xml_string};
 pub use doctype::Doctype;
 pub use element::Element;
+pub use instant::{
+    EPOCH_SECONDS_FROM_AD, NodeInstantExt, XmlInstantError, marshal_instant, parse_instant,
+};
 pub use namespace::Namespace;
 pub use node::Node;
 pub use node_ext::{NodeValueError, NodeXmlExt};
