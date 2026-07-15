@@ -17,22 +17,22 @@ Ordering notes:
 
 ## Phase 1: constants, errors, and small primitives
 
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/AutoTypeObfuscation.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/BasicField.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/Const.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/CrsAlgorithm.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/Defaults.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/FieldReference.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/GroupOverride.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/HeaderFieldId.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/KdfConst.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/Placeholder.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/PredefinedIcon.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/VariantTypeId.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/MemoryProtectionFlag.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/errors/CryptoError.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/errors/FormatError.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/errors/KeyfileError.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/AutoTypeObfuscation.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/BasicField.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/Const.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/CrsAlgorithm.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/Defaults.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/FieldReference.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/GroupOverride.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/HeaderFieldId.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/KdfConst.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/Placeholder.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/PredefinedIcon.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/VariantTypeId.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/constants/MemoryProtectionFlag.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/errors/CryptoError.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/errors/FormatError.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/errors/KeyfileError.kt`
 
 ## Phase 2: low-level byte, IO, and stream helpers
 

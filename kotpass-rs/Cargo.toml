@@ -20,6 +20,7 @@ hmac = { version = "0.13.0", features = ["zeroize"] }
 indexmap = "2.14.0"
 quick-xml = "0.41.0"
 rand = "0.10.2"
+regex = "1.13.1"
 salsa20 = { version = "0.11.0", features = ["zeroize"] }
 sha2 = { version = "0.11.0", features = ["zeroize"] }
 subtle = "2.6.1"
