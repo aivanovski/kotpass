@@ -1,4 +1,5 @@
 mod attribute;
+mod auto_type_data;
 mod boolean;
 mod doctype;
 mod element;
@@ -15,6 +16,7 @@ mod xml_builder;
 mod xml_version;
 
 pub use attribute::{Attribute, AttributeValue, UnsafeValue, unsafe_value};
+pub use auto_type_data::{marshal_auto_type_data, unmarshal_auto_type_data};
 pub use boolean::{BoolXmlExt, bool_to_xml_string};
 pub use doctype::Doctype;
 pub use element::Element;
