@@ -135,7 +135,7 @@ Ordering notes:
 
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/Signature.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/VariantItem.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/VariantDictionary.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/VariantDictionary.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/KdfParameters.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/DatabaseInnerHeader.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/header/DatabaseHeader.kt`
