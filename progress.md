@@ -101,15 +101,15 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/TwofishEngine.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Blake2bDigest.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Argon2Engine.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptionSaltGenerator.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/KeyTransform.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/CipherProvider.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/AesKdf.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/Argon2Kdf.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/BaseCiphers.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/TwofishCipher.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/BaseKdfProvider.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/KdfProvider.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptionSaltGenerator.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/KeyTransform.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/CipherProvider.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/AesKdf.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/Argon2Kdf.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/BaseCiphers.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/TwofishCipher.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/BaseKdfProvider.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/KdfProvider.kt`
 
 ## Phase 6: XML mapping for KeePass models
 
