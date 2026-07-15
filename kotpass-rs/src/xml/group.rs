@@ -98,7 +98,8 @@ pub fn marshal_group<E: InnerStream>(
 ) -> Result<Node, FormatError> {
     let mut node = Node::new(format_xml::tags::group::TAG_NAME);
     node.element(format_xml::tags::UUID).add_uuid(group.uuid);
-    node.element(format_xml::tags::group::NAME).text(&group.name);
+    node.element(format_xml::tags::group::NAME)
+        .text(&group.name);
     node.element(format_xml::tags::group::NOTES)
         .text(&group.notes);
     node.element(format_xml::tags::group::ICON_ID)

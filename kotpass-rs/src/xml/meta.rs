@@ -19,10 +19,7 @@ pub fn unmarshal_meta(node: &Node) -> Result<Meta, FormatError> {
         name: text_or_default(node, format_xml::tags::meta::DATABASE_NAME, ""),
         name_changed: instant(node, format_xml::tags::meta::DATABASE_NAME_CHANGED)?,
         description: text_or_default(node, format_xml::tags::meta::DATABASE_DESCRIPTION, ""),
-        description_changed: instant(
-            node,
-            format_xml::tags::meta::DATABASE_DESCRIPTION_CHANGED,
-        )?,
+        description_changed: instant(node, format_xml::tags::meta::DATABASE_DESCRIPTION_CHANGED)?,
         default_user: text_or_default(node, format_xml::tags::meta::DEFAULT_USER_NAME, ""),
         default_user_changed: instant(node, format_xml::tags::meta::DEFAULT_USER_NAME_CHANGED)?,
         maintenance_history_days: node

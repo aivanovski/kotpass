@@ -31,7 +31,9 @@ fn unmarshal_binary_data(node: &Node) -> Result<(i32, BinaryData), FormatError> 
     let bytes = node
         .get_bytes()
         .map_err(|error| FormatError::InvalidXml(error.to_string()))?
-        .ok_or_else(|| FormatError::InvalidXml(format!("Empty body of binary node with id: {id}.")))?;
+        .ok_or_else(|| {
+            FormatError::InvalidXml(format!("Empty body of binary node with id: {id}."))
+        })?;
     let compressed = node
         .attribute_value(format_xml::attributes::COMPRESSED)
         .is_some_and(|value| value.eq_ignore_ascii_case("true"));

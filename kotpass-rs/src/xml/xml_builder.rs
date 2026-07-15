@@ -102,10 +102,7 @@ fn copy_attributes<'a>(
         let attribute = attribute?;
         let name = name_to_string(attribute.key.as_ref())?;
         let value = attribute
-            .decoded_and_normalized_value(
-                quick_xml::XmlVersion::Implicit1_0,
-                reader.decoder(),
-            )?
+            .decoded_and_normalized_value(quick_xml::XmlVersion::Implicit1_0, reader.decoder())?
             .into_owned();
 
         if let Some(namespace_name) = name.strip_prefix("xmlns") {

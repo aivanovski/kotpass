@@ -5,8 +5,8 @@ use crate::{
     model::{Entry, EntryFields, EntryValue, XmlDecodeContext, XmlEncodeContext},
     xml::{
         Node, NodeXmlExt, format_xml, marshal_auto_type_data, marshal_binary_reference,
-        marshal_custom_data, marshal_time_data, unmarshal_auto_type_data, unmarshal_binary_reference,
-        unmarshal_custom_data, unmarshal_time_data,
+        marshal_custom_data, marshal_time_data, unmarshal_auto_type_data,
+        unmarshal_binary_reference, unmarshal_custom_data, unmarshal_time_data,
     },
 };
 

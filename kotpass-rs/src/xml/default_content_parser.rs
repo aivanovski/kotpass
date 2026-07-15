@@ -91,8 +91,8 @@ impl DefaultXmlContentParser {
         E: InnerStream,
         F: FnOnce(&Meta) -> XmlDecodeContext<E>,
     {
-        let document = parse_str(xml_data)
-            .map_err(|error| FormatError::InvalidXml(error.to_string()))?;
+        let document =
+            parse_str(xml_data).map_err(|error| FormatError::InvalidXml(error.to_string()))?;
         let root = document
             .first(format_xml::tags::ROOT)
             .ok_or_else(|| FormatError::InvalidXml("No root found.".to_owned()))?;

@@ -131,7 +131,10 @@ mod tests {
         assert_eq!(enabled.get_group_override(), GroupOverride::Enabled);
         assert_eq!(disabled.get_group_override(), GroupOverride::Disabled);
         assert_eq!(inherit.get_group_override(), GroupOverride::Inherit);
-        assert_eq!(Node::new("Missing").get_group_override(), GroupOverride::Inherit);
+        assert_eq!(
+            Node::new("Missing").get_group_override(),
+            GroupOverride::Inherit
+        );
     }
 
     #[test]
@@ -149,10 +152,7 @@ mod tests {
         let mut node = Node::new("UUID");
         node.text("AA==");
 
-        assert_eq!(
-            node.get_uuid(),
-            Err(NodeValueError::InvalidUuidLength(1))
-        );
+        assert_eq!(node.get_uuid(), Err(NodeValueError::InvalidUuidLength(1)));
     }
 
     #[test]
@@ -169,10 +169,7 @@ mod tests {
         let mut node = Node::new("Data");
         node.text("?");
 
-        assert_eq!(
-            node.get_bytes(),
-            Err(Base64Error::UnexpectedCharacter(0))
-        );
+        assert_eq!(node.get_bytes(), Err(Base64Error::UnexpectedCharacter(0)));
     }
 
     #[test]

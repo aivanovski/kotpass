@@ -79,7 +79,9 @@ mod tests {
         node.element(tags::entry::auto_type::DEFAULT_SEQUENCE)
             .text("{USERNAME}{TAB}{PASSWORD}{ENTER}");
         let association = node.element(tags::entry::auto_type::ASSOCIATION);
-        association.element(tags::entry::auto_type::WINDOW).text("*");
+        association
+            .element(tags::entry::auto_type::WINDOW)
+            .text("*");
         association
             .element(tags::entry::auto_type::KEYSTROKE_SEQUENCE)
             .text("{PASSWORD}");

@@ -142,7 +142,9 @@ mod tests {
         );
 
         let node = marshal_custom_icons(&context(FormatVersion::new(4, 1)), &icons).unwrap();
-        let item = node.first(format_xml::tags::meta::custom_icons::ITEM).unwrap();
+        let item = node
+            .first(format_xml::tags::meta::custom_icons::ITEM)
+            .unwrap();
 
         assert_eq!(
             item.first(format_xml::tags::meta::custom_icons::ITEM_UUID)
@@ -167,10 +169,15 @@ mod tests {
     fn omits_v41_custom_icon_metadata_before_v41() {
         let id = Uuid::from_u128(1);
         let mut icons = IndexMap::new();
-        icons.insert(id, CustomIcon::new(b"png".to_vec(), Some("icon".to_owned()), None));
+        icons.insert(
+            id,
+            CustomIcon::new(b"png".to_vec(), Some("icon".to_owned()), None),
+        );
 
         let node = marshal_custom_icons(&context(FormatVersion::new(4, 0)), &icons).unwrap();
-        let item = node.first(format_xml::tags::meta::custom_icons::ITEM).unwrap();
+        let item = node
+            .first(format_xml::tags::meta::custom_icons::ITEM)
+            .unwrap();
 
         assert!(
             item.first(format_xml::tags::meta::custom_icons::ITEM_NAME)

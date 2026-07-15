@@ -96,9 +96,10 @@ mod tests {
 
     #[test]
     fn unmarshals_binary_reference_from_context_index() {
-        let reference = unmarshal_binary_reference(&decode_context(), &reference_node("1", Some("file.txt")))
-            .unwrap()
-            .unwrap();
+        let reference =
+            unmarshal_binary_reference(&decode_context(), &reference_node("1", Some("file.txt")))
+                .unwrap()
+                .unwrap();
 
         assert_eq!(reference.name, "file.txt");
         assert_eq!(
