@@ -94,10 +94,10 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/block/PaddedBufferedBlockCipher.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/padding/BlockCipherPadding.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/padding/PKCS7Padding.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaCore.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaCha7539Engine.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaEngine.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Salsa20Engine.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaCore.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaCha7539Engine.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/ChaChaEngine.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Salsa20Engine.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/TwofishEngine.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Blake2bDigest.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Argon2Engine.kt`
