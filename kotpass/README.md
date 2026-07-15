@@ -1,29 +1,62 @@
-# Module kotpass
-Library provides reading/writing support for [KeePass](https://en.wikipedia.org/wiki/KeePass) (KDBX) files.
+# Kotpass 
+![Build & Test](https://img.shields.io/github/actions/workflow/status/keemobile/kotpass/gradle.yml?label=Build%20%26%20Test)
+[![](https://jitpack.io/v/keemobile/kotpass.svg)](https://jitpack.io/#keemobile/kotpass) [![codecov](https://codecov.io/gh/keemobile/kotpass/graph/badge.svg?token=59LMP3BOXJ)](https://codecov.io/gh/keemobile/kotpass) ![badge][badge-jvm]
 
-# Package app.keemobile.kotpass.constants
-Basic constant values and enumerations.
+[badge-jvm]: http://img.shields.io/badge/-JVM-DB413D.svg
 
-# Package app.keemobile.kotpass.cryptography
-Cryptography related classes.
+The library offers reading and writing support for [KeePass](https://en.wikipedia.org/wiki/KeePass) (KDBX) files in Kotlin, including the latest format version 4.1. It is suitable for Mobile, Desktop, and Backend JVM projects. The functional style API makes it convenient for MVI-like architectures.
 
-# Package app.keemobile.kotpass.database
-Database encoding/decoding.
+## See it in action
 
-# Package app.keemobile.kotpass.database.header
-Describes binary header structure.
+This library is used as backbone of [KeeMobile](https://keemobile.app) password manager, check it out:
 
-# Package app.keemobile.kotpass.database.modifiers
-Core modifiers to mutate the database.
+[<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width='160'/>](https://play.google.com/store/apps/details?id=app.keemobile)
 
-# Package app.keemobile.kotpass.errors
-Format specific error classes.
+## Installation
 
-# Package app.keemobile.kotpass.extensions
-Auxiliary extensions.
+The latest release is available on [Maven Central](https://central.sonatype.com/artifact/app.keemobile/kotpass/overview).
 
-# Package app.keemobile.kotpass.models
-Data models which describe database content.
+```kotlin
+dependencies {
+    implementation("app.keemobile:kotpass:0.13.0")
+}
+```
 
-# Package app.keemobile.kotpass.xml
-XML parsing components.
+## Usage
+
+### 🧬 [Api reference](https://keemobile.github.io/kotpass)
+
+Reading from file:
+
+``` kotlin
+val credentials = Credentials.from(EncryptedValue.fromString("passphrase"))
+val database = File("testfile.kdbx")
+    .inputStream()
+    .use { inputStream ->
+        KeePassDatabase.decode(inputStream, credentials)
+    }    
+```
+`KeePassDatabase` is represented as immutable object, in order to alter it use a set of modifier extensions. 
+
+Each time new `KeePassDatabase` object is returned:
+
+``` kotlin
+val groupUuid = UUID.fromString("c997344c-952b-e02b-06a6-29510ce71a12")
+val newDatabase = database
+    .modifyMeta {
+        copy(generator = "Lorem ipsum")
+    }.modifyGroup(groupUuid) {
+        copy(name = "Hello kotpass!")
+    }
+```
+
+## Third-Party Libraries
+
+This project includes modified portions of:
+- [Kotlin Xml Builder](https://github.com/redundent/kotlin-xml-builder), version 1.9.3.
+
+  Modifications: reduced API surface, code cleanup.
+
+- [Apache Commons Lang](https://commons.apache.org/proper/commons-lang), version 3.17.0.
+
+  Modifications: included only small portion, reduced API surface.
