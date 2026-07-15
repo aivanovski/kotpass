@@ -100,7 +100,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Salsa20Engine.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/TwofishEngine.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Blake2bDigest.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Argon2Engine.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/engines/Argon2Engine.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/EncryptionSaltGenerator.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/KeyTransform.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/cryptography/format/CipherProvider.kt`

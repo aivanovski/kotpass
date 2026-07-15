@@ -1,3 +1,4 @@
+pub mod argon2_engine;
 pub mod blake2b;
 pub mod byte_array;
 pub mod byte_string;
@@ -9,6 +10,7 @@ pub mod padding;
 pub mod secure_random;
 pub mod stream;
 
+pub use argon2_engine::{Argon2Engine, Argon2Variant, Argon2Version};
 pub use blake2b::Blake2bDigest;
 pub use cipher::{
     BlockCipher, BlockCipherMode, CbcBlockCipherMode, PaddedBufferedBlockCipher, TwofishEngine,
