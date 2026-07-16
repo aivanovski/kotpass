@@ -146,7 +146,7 @@ Ordering notes:
 ## Phase 8: database API, builders, and modifiers
 
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/KeePassDatabase.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/Decoder.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/Decoder.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/Encoder.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/builders/Entry.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/builders/Group.kt`
