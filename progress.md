@@ -153,7 +153,7 @@ Ordering notes:
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/Binaries.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/Content.kt`
 - [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/Credentials.kt`
-- [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/CustomIcons.kt`
+- [x] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/CustomIcons.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/DatabaseHeader.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/Entry.kt`
 - [ ] `kotpass/kotpass/src/main/kotlin/app/keemobile/kotpass/database/modifiers/Group.kt`
