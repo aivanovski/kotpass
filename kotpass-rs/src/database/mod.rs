@@ -4,6 +4,7 @@ pub mod decode;
 pub mod encode;
 pub mod header;
 pub mod keepass_database;
+pub mod modifiers;
 pub mod placeholders;
 
 pub use content_blocks::ContentBlocks;

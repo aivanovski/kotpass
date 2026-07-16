@@ -168,13 +168,6 @@ impl KeePassDatabase {
             }
         }
     }
-
-    fn binaries(&self) -> &indexmap::IndexMap<Vec<u8>, crate::model::BinaryData> {
-        match self {
-            Self::Ver3x { content, .. } => &content.meta.binaries,
-            Self::Ver4x { inner_header, .. } => &inner_header.binaries,
-        }
-    }
 }
 
 fn transformed_key(
